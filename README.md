@@ -6,9 +6,9 @@ This is a starter microservice that allows you to start developing edge microser
 # How to use it?
 ---
 
-#### If this is your first time developing edge microservice, please follow the edge microservice development quick start guide from [mimik's developer portal](https://developer.mimik.com/quickstart).
+#### If this is your first time developing edge microservice, please follow the edge microservice development quick start guide from [mimik's developer portal](https://developer.mimik.com/development-setup/).
 
-#### Before you use, you need to build the microservice and later deploy it to edgeSDK.
+#### Before you use, you need to build the microservice and later deploy it to edgeEngine.
 
 # Build Process
 ---
@@ -29,8 +29,8 @@ For **mobile application development**, deployment is programmatically by **Andr
 
 For **microservice development**, things you will need:
 
-- edgeSDK running on the deployment targeted device.
-- Obtained edge Acess Token and associate the device from **edgeSDK OAuth Tool**.
+- edgeEngine running on the deployment targeted device.
+- Obtained edge Access Token and associate the device from [mimik-edge-cli](https://www.npmjs.com/package/@mimik/mimik-edge-cli)
 - Run the following commands under the same directory of your containerized microservice file:
 
 ```
