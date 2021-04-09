@@ -34,7 +34,7 @@ For **mobile application development**, deployment is programmatically by **Andr
 For **microservice development**, things you will need:
 
 - edgeSDK running on the deployment targeted device.
-- Obtained edge Acess Token and associate the device from **edgeSDK OAuth Tool**.
+- Obtained edge Acess Token and associate the device from [mimik-edge-cli](https://www.npmjs.com/package/@mimik/mimik-edge-cli).
 - Run the following commands under the same directory of your containerized microservice file using mimik-edge-cli:
 
 ```
