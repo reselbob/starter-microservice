@@ -8,7 +8,7 @@ The objective of this project is show you how to create an Edge microservice usi
 ## Important Installation Prerequisites
 
 
-In order to create a microservice using Mimik Edge, **you must have a Mimik developer account.** You can sign up for a Mimik Developer account here: [https://developer.mimik.com/console](https://devops.com/lock-down/https://developer.mimik.com/console).
+In order to create a microservice using Mimik Edge, **you must have a Mimik Developer account.** You can sign up for a Mimik Developer account here: [https://developer.mimik.com/console](https://devops.com/lock-down/https://developer.mimik.com/console).
 
 Once you've created a Mimik Developer account, makes sure that [Git](https://git-scm.com/), [Node.js®](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are installed on your development machine.
 
