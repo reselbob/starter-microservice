@@ -5,7 +5,7 @@ TABLE OF CONTENTS
 * [Objective](#objective)
 * [Important Installation Prerequisites](#important-installation-prerequisites)
 * [Build Process](#build-process)
-* [Deploying the `starter-microservice`](deploying-the-starter-microservice)
+* [Deploying the `starter-microservice`](#deploying-the-starter-microservice)
 
 
 ## Objective
