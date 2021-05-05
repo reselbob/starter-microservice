@@ -1,30 +1,64 @@
 # starter-microservice
 
----
+## Objective
 
-This is a starter microservice that allows you to start developing edge microservice.
 
-# How to use it?
+The objective of this project is show you how to o create an Edge microservice using the demonstration `starter-microservices`
 
----
+## Important Installation Prerequisites
 
-#### If this is your first time developing edge microservice, please follow the edge microservice development quick start guide from [mimik's developer portal](https://developer.mimik.com/development-setup/).
 
-#### Before you use, you need to build the microservice and later deploy it to edgeEngine.
+In order to create a microservice using Mimik Edge, you must have an Mimik developer account. You can sign up for a Mimik Developer account here: [https://developer.mimik.com/console](https://devops.com/lock-down/https://developer.mimik.com/console).
 
-# Build Process
+Once you've created a Mimik Developer account, makes sure that [Git](https://git-scm.com/) and [Node.js®](https://nodejs.org/) are installed on your development machine.
 
----
+Then, you will need to install the following **critically important** items: 
 
-The build script **default.yml** is specified under **config** directory.
+* Edge SDK
+* Mimik Edge Engine
+* Mimik Edge CLI Tool
+
+Also, you will need to create an Edge Access Token.
+
+The following sections provide the information for installing the prerequisites.
+
+
+### Installing the Mimik Edge SDK
+
+You can find the various versions of the Edge SDK at this URL: [https://github.com/mimikgit/edgeSDK/releases](https://github.com/mimikgit/edgeSDK/releases)
+
+### Installing the Mimik Edge Engine
+
+After you have the Edge SDK installed, you need to get the Edge Engine up and running. You can find the instructions for installing and running the various versions of the Mimik Edge Engine on your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
+
+### Installing Mimik Edge CLI Tool
+
+Once, the Mimik Edge SDK and Mimik Edge Engine are installed, execute the following command to install the Mimik Edge CLI Tool.
+
+`npm install -g @mimik/mimik-edge-cli`
+
+### Creating an Edge Access Token and binding it to your account
+
+The last thing you'll need to to is create an Edge Access Token and bind it to your account using the Edge CLI Tool.
+
+You'll find the instuctions for creating an Edge Access Token and binding it to your Mimik account at this URL:[https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
+
+Once all the prerequisites are satisfied you are ready to create the `starter-microservice`.
+
+## Build Process
+
+
+The following steps will install the Node.js packages needed to create the the `starter-microservice`, build the microservice and then package it up in to a `.tar` file.
 
 1. Install dependencies: `npm install`
 2. Run the build script: `npm run build`
 3. Package to container: `npm run package`
 
-# Deployment
+The build script, `default.yml` is located in the `config` directory found [here](./config/default.yml).
 
----
+## Deploying the `starter-microservice`
+
+[THE FOLLOWING MIGHT NEED TO BE REFACTORED]
 
 For **mobile application development**, deployment is programmatically by **Android or iOS Wrappers**, learn more about it:
 
