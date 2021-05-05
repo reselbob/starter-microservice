@@ -41,7 +41,7 @@ Once the Mimik Edge SDK and Mimik Edge Engine are installed, execute the followi
 
 The last thing you'll need to to is create an Edge Access Token and bind it to your Mimik account using the Edge CLI Tool.
 
-You'll find the instuctions for creating an Edge Access Token and binding it to your Mimik account at this URL:[https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
+You'll find the instuctions for creating an Edge Access Token and binding it to your Mimik account at this URL: [https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
 
 Once all the prerequisites are satisfied you are ready to create the `starter-microservice`.
 
