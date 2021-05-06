@@ -109,7 +109,7 @@ mimik-edge-cli image deploy --image={YOUR_IMAGE_PATH} --token={EDGE_ACCESS_TOKEN
 **WHERE**
 
 * `{YOUR_IMAGE_PATH}` is the location of the generated `.tar` file creted previously
-* `{EDGE_ACCESS_TOKEN}` is the Edge Access Token that created previously in the section, **Creating an Edge Access Token and binding it to your account** above.
+* `{EDGE_ACCESS_TOKEN}` is the Edge Access Token that created previously in the section, **[Creating an Edge Access Token and binding it to your account](#creating-an-edge-access-token-and-binding-it-to-your-account)** above.
 
 For example:
 
