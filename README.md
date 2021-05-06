@@ -208,7 +208,7 @@ state:   started
 
 ```
 
-To call the microserice, use the following format:
+To call the microservice, use the following format:
 
 `curl http://localhost:8083/< MCM.BASE_API_PATH>/`
 
