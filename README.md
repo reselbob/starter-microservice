@@ -221,5 +221,11 @@ Thus, to exercise the microservice, exe ut the following command:
 
 `curl http://localhost:8083/bb6fba7d-6321-41c5-ac37-1a7a8a9a4ac0/sample/v1`
 
+You'll get out as follows:
+
+```
+TO BE PROVIDED
+```
+
 
 For more information and explanation, you can visit our [mCM container management API references](https://developer.mimik.com/edgeengine-mcm-api/) and [general guide on packaging, deployment, and exporting microservice](https://developer.mimik.com/building-edge-microservices/).
