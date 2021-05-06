@@ -158,7 +158,7 @@ Make substitutions in the file, `start.json` according the to out from the outpu
 * Replace {{YOUR_PATH}} with a path of your choosing that will be appended to the host name for form the URL by which you will access the `starter-microservice`. We recommend keeping it simple, for example:
 
 ```
-"MCM.BASE_API_PATH": "sample/v1",
+"MCM.BASE_API_PATH": "/sample/v1",
 ```
 The JSON below shows an example of configurations settings for `start.json`:
 
