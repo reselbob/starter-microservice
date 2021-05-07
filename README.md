@@ -3,6 +3,7 @@
 TABLE OF CONTENTS
 
 * [Objective](#objective)
+* [Definition of Terms](#definition-of-terms)
 * [Important Installation Prerequisites](#important-installation-prerequisites)
 * [Build Process](#build-process)
 * [Deploying the `starter-microservice`](#deploying-the-starter-microservice)
@@ -11,7 +12,19 @@ TABLE OF CONTENTS
 ## Objective
 
 
-The objective of this project is show you how to create an Edge microservice using this demonstration `starter-microservice`
+The objective of this project is show you how to create an Edge microservice on your local developement machine using this demonstration `starter-microservice`
+
+## Definition of Terms
+
+| term | definition |
+|-----------|------------|
+| container | Under Mimik Edge a `container` describes the basic deployment unit for a microservice running under Mimik Edge. The basic deployment unit in Mimik Edge is a `.tar` file.  |
+| image | An image is the name assigned to a microservice running under edgeEnginer |
+| edgeEngine | The edgeEngine is the  mechanism that runs your microservice on the given device. |
+| Edge CLI Tool|You use the Edge CLI Tool to interact with edgeEngine at the command line |
+| Edge Access Token|The Edge Access Token is a string of characters that allows you to use the edgeEngine and to operate within an Edge Cluster. You'll use the Edge CLI Tool to create an Edge Access Token |
+
+
 
 ## Important Installation Prerequisites
 
