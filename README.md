@@ -22,8 +22,7 @@ Once you've created a Mimik Developer account, makes sure that [Git](https://git
 
 Then, you will need to install the following **critically important** items: 
 
-* Mimik Edge SDK
-* Mimik Edge Engine
+* Mimik edgeEngine
 * Mimik Edge CLI Tool
 
 Also, you will need to create an Edge Access Token.
@@ -31,17 +30,15 @@ Also, you will need to create an Edge Access Token.
 The following sections provide the information for installing the prerequisites.
 
 
-### Installing the Mimik Edge SDK
+### Installing the Mimik edgeEngine
 
 You can find the various versions of the Edge SDK at this URL: [https://github.com/mimikgit/edgeSDK/releases](https://github.com/mimikgit/edgeSDK/releases). Select the artifact relevant to your development environment and the run the setup executable or uncompress the `.tar` file, depending on the targeted operating system.
 
-### Installing the Mimik Edge Engine
-
-After you have the Edge SDK installed, you need to get the Edge Engine up and running. You can find the instructions for installing and running the version of the Mimik Edge Engine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
+After you have the Edge SDK installed, you need to get the edgeEngine up and running. You can find the instructions for installing and running the version of the Mimik edgeEngine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
 
 ### Installing Mimik Edge CLI Tool
 
-Once the Mimik Edge SDK and Mimik Edge Engine are installed, execute the following command to install the Mimik Edge CLI Tool.
+Once the Mimik Edge SDK and Mimik edgeEngine are installed, execute the following command to install the Mimik Edge CLI Tool.
 
 `npm install -g @mimik/mimik-edge-cli`
 
