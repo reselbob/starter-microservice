@@ -67,19 +67,24 @@ Once all the prerequisites are satisfied you are ready to create the `starter-mi
 
 The following steps will install the Node.js packages needed to create the the `starter-microservice`, build the microservice and then package it up in to a `.tar` file.
 
-Clone this repository onto your development machines. 
+**Step 1:** Clone this repository onto your development machines. 
 
 `git clone https://github.com/reselbob/starter-microservice.git`
 
-Navigate into the newly cloned directory:
+**Step 2:** Navigate into the newly cloned directory:
 
 `cd starter-microservice`
 
-Then run the following three steps:
+**Step 3:** Install dependencies: 
 
-1. Install dependencies: `npm install`
-2. Run the build script: `npm run build`
-3. Package to container: `npm run package`
+`npm install`
+
+**Step 4:** Run the build script
+`npm run build`
+
+**Step 5:** Package the built artifacts into the `.tar` file container:
+
+`npm run package`
 
 When you `package` the code for the `starter-microservice`, you'll get output similar to the following:
 
@@ -99,12 +104,9 @@ Pay special attention to the location of the generated `.tar` file for the `star
 
 ...you're going to use it.
 
-The build script, `default.yml` is located in the `config` directory found [here](./config/default.yml).
-
 ## Deploying the `starter-microservice`
 
-
-Run the following command in the same directory in which you generated the `.tar` file for the `starter-microservice`.
+**Step 1:** Run the following command in the same directory in which you generated the `.tar` file for the `starter-microservice`.
 
 ```
 mimik-edge-cli image deploy --image={YOUR_IMAGE_PATH} --token={EDGE_ACCESS_TOKEN}
@@ -137,7 +139,7 @@ status:  successfully deployed
 
 ```
 
-Now open `start.json` the source code working directory, `starter-microservice`
+**Step 2:** Open `start.json` in the source code working directory, `starter-microservice`
 
 `v1 start.json`
 
@@ -156,7 +158,7 @@ You'll see the following:
 
 ```
 
-Make substitutions in the file, `start.json` according the to out from the output shown above.
+**Step 3:** Make substitutions in the file, `start.json` according the to out from the output shown above.
 
 * Replace `{{microserviceName}}` with the `name` from the output, in this case: `microservice-v1`
 * Replace `{{tarFileName}}` with the filename of the `.tar` file generated during the deployment process, in this case, `microservice-v1-1.0.0.tar`.
@@ -183,14 +185,14 @@ You can edit "add your environment variable name": "{{add your environment varia
 
 Save the newly updated start.json file
 
-Navigate to where the `start.json `file is located via terminal then run the following command to invoke `starter-microservice`:
+**Step 4:** Navigate to where the `start.json `file is located then run the following command to deploy the `starter-microservice` payload:
 
 ```
 mimik-edge-cli container deploy --payload start.json --token={EDGE_ACCESS_TOKEN}
 
 ```
 
-In this case, 
+In this case, you could run:
 
 ```
 mimik-edge-cli container deploy --payload start.json \
@@ -213,7 +215,7 @@ state:   started
 
 ```
 
-To call the microservice, use the following format:
+**Step 5:** Call the microservice, use the following format:
 
 `curl http://localhost:8083/< MCM.BASE_API_PATH>/`
 
