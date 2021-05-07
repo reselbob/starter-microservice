@@ -32,19 +32,19 @@ The following sections provide the information for installing the prerequisites.
 
 ### Installing the Mimik edgeEngine
 
-You can find the various versions of the Edge SDK at this URL: [https://github.com/mimikgit/edgeSDK/releases](https://github.com/mimikgit/edgeSDK/releases). Select the artifact relevant to your development environment and the run the setup executable or uncompress the `.tar` file, depending on the targeted operating system.
+You can find the various versions of edgeEngine at this URL: [https://github.com/mimikgit/edgeSDK/releases](https://github.com/mimikgit/edgeSDK/releases). Select the artifact relevant to your development environment and the run the setup executable or uncompress the `.tar` file, depending on the targeted operating system.
 
-After you have the Edge SDK installed, you need to get the edgeEngine up and running. You can find the instructions for installing and running the version of the Mimik edgeEngine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
+After you have edgeEngine downloaded and installed, you need to get it up and running. You can find the instructions for installing and running the version of the Mimik edgeEngine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
 
 ### Installing Mimik Edge CLI Tool
 
-Once the Mimik Edge SDK and Mimik edgeEngine are installed, execute the following command to install the Mimik Edge CLI Tool.
+Once the Mimik edgeEngine are installed, execute the following command to install the Mimik Edge CLI Tool.
 
 `npm install -g @mimik/mimik-edge-cli`
 
 ### Creating an Edge Access Token and binding it to your account
 
-The last thing you'll need to to is create an Edge Access Token and bind it to your Mimik account using the Edge CLI Tool.
+The last thing you'll need to to is create an Edge Access Token and bind it to your Mimik account using the Edge CLI Tool. The Edge Access Token makes the running instance of edgeEngine visible to other instances of edgeEngine running in the cluster.
 
 You'll find the instuctions for creating an Edge Access Token and binding it to your Mimik account at this URL: [https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
 
@@ -91,12 +91,7 @@ The build script, `default.yml` is located in the `config` directory found [here
 ## Deploying the `starter-microservice`
 
 
-For **mobile application development**, deployment is done programmatically using **Android or iOS Wrappers**. The following links describe mobile deployment in detail:
-
-- Android: [https://developer.mimik.com/edgemobileclient-android-wrapper/](https://developer.mimik.com/edgemobileclient-android-wrapper/)
-- iOS: [https://developer.mimik.com/edgemobileclient-ios-wrapper/](https://developer.mimik.com/edgemobileclient-ios-wrapper/)
-
-For **microservice development** on your local machine, run the following command is the same directory of the `.tar` file into which you compressed the `starter-microservice`.
+Run the following command in the same directory in which you generated the `.tar` file for the `starter-microservice`.
 
 ```
 mimik-edge-cli image deploy --image={YOUR_IMAGE_PATH} --token={EDGE_ACCESS_TOKEN}
@@ -137,10 +132,10 @@ You'll see the following:
 
 ```
 {
-  "name": "{{containerName}}",
-  "image": "{{imageName}}",
+  "name": "{{microserviceName}}",
+  "image": "{{tarFileName}}",
   "env": {
-    "MCM.BASE_API_PATH": "{{YOUR_PATH}}",
+    "MCM.BASE_API_PATH": "{{YOUR_API_PATH}}",
     "MCM.WEBSOCKET_SUPPORT": "true",
     "<add your environment variable name>": "{{add your environment variable}}"
   }
@@ -150,9 +145,9 @@ You'll see the following:
 
 Make substitutions in the file, `start.json` according the to out from the output shown above.
 
-* Replace `{{imageName}}` with the `name` from the output, in this case: `microservice-v1`
-* Replace `{{containerName}}` with the filename of the `.tar` file generated during the deployment process, in this case, `microservice-v1-1.0.0.tar`.
-* Replace {{YOUR_PATH}} with a path of your choosing that will be appended to the host name for form the URL by which you will access the `starter-microservice`. We recommend keeping it simple, for example:
+* Replace `{{microserviceName}}` with the `name` from the output, in this case: `microservice-v1`
+* Replace `{{tarFileName}}` with the filename of the `.tar` file generated during the deployment process, in this case, `microservice-v1-1.0.0.tar`.
+* Replace `{{YOUR_API_PATH}}` with a path of your choosing that will be appended to the host name to form the URL by which you will access the `starter-microservice`. We recommend keeping it simple, for example:
 
 ```
 "MCM.BASE_API_PATH": "/sample/v1",
