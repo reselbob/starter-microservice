@@ -214,17 +214,18 @@ To call the microservice, use the following format:
 
 **WHERE**
 
-`< MCM.BASE_API_PATH>` is the value resported in the response returned when you invoked the `starter-microservice` shown above previously. In this case the value is: `/bb6fba7d-6321-41c5-ac37-1a7a8a9a4ac0/sample/v1` 
+`< MCM.BASE_API_PATH>` is the value resported in the response returned when you invoked the `starter-microservice` shown above previously. In this case the value is: `/bb6fba7d-6321-41c5-ac37-1a7a8a9a4ac0/sample/v1/` 
 
 Thus, to exercise the microservice, exe ut the following command: 
 
 
-`curl http://localhost:8083/bb6fba7d-6321-41c5-ac37-1a7a8a9a4ac0/sample/v1`
+`curl http://localhost:8083/bb6fba7d-6321-41c5-ac37-1a7a8a9a4ac0/sample/v1/`
 
 You'll get out as follows:
 
 ```
-TO BE PROVIDED
+Hello World
+
 ```
 
 
