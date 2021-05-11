@@ -18,48 +18,48 @@ The objective of this project is show you how to create an Edge microservice on 
 
 | term | definition |
 |-----------|------------|
-| container | Within the Mimik Edge application domain, the term, `container` describes the basic deployment unit for a microservice running under the edgeEngine. The physical deployment unit for a container in Mimik Edge is a `.tar` file.  |
+| container | Within the mimik Edge application domain, the term, `container` describes the basic deployment unit for a microservice running under the edgeEngine. The physical deployment unit for a container in mimik Edge is a `.tar` file.  |
 | image | An image is the name assigned to a microservice running under edgeEngine. |
 | edgeEngine | The edgeEngine is the  mechanism that runs your microservice on the given device. |
-| Edge CLI Tool|You use the Edge CLI Tool to interact with edgeEngine at the command line. |
-| Edge Access Token|The Edge Access Token is a string of characters that allows you to use the edgeEngine and to operate within an Edge Cluster. You'll use the Edge CLI Tool to create an Edge Access Token. |
+| edgeEngine CLI Tool|You use the edgeEngine CLI Tool to interact with edgeEngine at the command line. |
+| Edge Access Token|The Edge Access Token is a string of characters that allows you to use the edgeEngine and to operate within an Edge Cluster. You'll use the edgeEngine CLI Tool to create an Edge Access Token. |
 
 
 
 ## Important Installation Prerequisites
 
 
-In order to create a microservice using Mimik Edge, **you must have a Mimik Developer account.** You can sign up for a Mimik Developer account here: [https://developer.mimik.com/console](https://developer.mimik.com/console).
+In order to create a microservice using mimik Edge, **you must have a mimik Developer account.** You can sign up for a mimik Developer account here: [https://developer.mimik.com/console](https://developer.mimik.com/console).
 
-Once you've created a Mimik Developer account, makes sure that [Git](https://git-scm.com/), [Node.js®](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are installed on your development machine.
+Once you've created a mimik Developer account, makes sure that [Git](https://git-scm.com/), [Node.js®](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are installed on your development machine.
 
 Then, you will need to install the following **critically important** items: 
 
-* Mimik edgeEngine
-* Mimik Edge CLI Tool
+* mimik edgeEngine
+* mimik edgeEngine CLI Tool
 
 Also, you will need to create an Edge Access Token.
 
 The following sections provide the information for installing the prerequisites.
 
 
-### Installing the Mimik edgeEngine
+### Installing the mimik edgeEngine
 
 You can find the various versions of edgeEngine at this URL: [https://github.com/mimikgit/edgeSDK/releases](https://github.com/mimikgit/edgeSDK/releases). Select the artifact relevant to your development environment and the run the setup executable or uncompress the `.tar` file, depending on the targeted operating system.
 
-After you have edgeEngine downloaded and installed, you need to get it up and running. You can find the instructions for installing and running the version of the Mimik edgeEngine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
+After you have edgeEngine downloaded and installed, you need to get it up and running. You can find the instructions for installing and running the version of the mimik edgeEngine that is appropriate to your development machine at this URL: [https://developer.mimik.com/installation-guide/](https://developer.mimik.com/installation-guide/).
 
-### Installing Mimik Edge CLI Tool
+### Installing mimik edgeEngine CLI Tool
 
-Once the Mimik edgeEngine are installed, execute the following command to install the Mimik Edge CLI Tool.
+Once the mimik edgeEngine are installed, execute the following command to install the mimik edgeEngine CLI Tool.
 
 `npm install -g @mimik/mimik-edge-cli`
 
 ### Creating an Edge Access Token and binding it to your account
 
-The last thing you'll need to to is create an Edge Access Token and bind it to your Mimik account using the Edge CLI Tool. The Edge Access Token makes the running instance of edgeEngine visible to other instances of edgeEngine running in the cluster.
+The last thing you'll need to to is create an Edge Access Token and bind it to your mimik account using the edgeEngine CLI Tool. The Edge Access Token makes the running instance of edgeEngine visible to other instances of edgeEngine running in the cluster.
 
-You'll find the instuctions for creating an Edge Access Token and binding it to your Mimik account at this URL: [https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
+You'll find the instuctions for creating an Edge Access Token and binding it to your mimik account at this URL: [https://developer.mimik.com/development-setup/](https://developer.mimik.com/development-setup/).
 
 Once all the prerequisites are satisfied you are ready to create the `starter-microservice`.
 
