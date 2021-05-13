@@ -48,6 +48,13 @@ app.post('/form', (req, res) => {
   res.end(req.body);
 });
 
+//Trivial ping, added as an additional service
+app.get('/ping/:name', (req, res) => {
+
+  const msg = {name: req.params.name, date: new Date()};
+  res.end(JSON.stringify(msg));
+});
+
 app.get('/localDevices', (request, response) => {
   context.http.request(({
     url: 'http://localhost:8083/mds/v1/nodes?clusters=linkLocal',
