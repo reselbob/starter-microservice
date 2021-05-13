@@ -47,3 +47,40 @@ app.get('/promise', (req, res) => {
 app.post('/form', (req, res) => {
   res.end(req.body);
 });
+
+app.get('/localDevices', (request, response) => {
+  context.http.request(({
+    url: 'http://localhost:8083/mds/v1/nodes?clusters=linkLocal',
+    success: function(r) {
+      if (!request.authorization) {
+        response.status = 403;
+        response.end(JSON.stringify({ 'msg': 'missing bearer token' }, 2, null));
+        return;
+      }
+      const authorization = request.authorization.split(' ');
+      if (authorization.length < 2) {
+        response.status = 403;
+        response.end(JSON.stringify({ 'msg': 'missing bearer token' }, 2, null));
+        return;
+      }
+      const token = authorization[1];
+      const nodes = JSON.parse(r.data);
+      const data = JSON.stringify(nodes.data);
+
+      context.edge.decryptEncryptedNodesJson({
+        type: 'local',
+        data,
+        token,
+        success: function(result) {
+          response.end(JSON.stringify(JSON.parse(result.data), null, 2));
+        },
+        error: function(err) {
+          response.end(err.message);
+        }
+      });
+    },
+    error: function(err) {
+      response.end(err.message);
+    }
+  }));
+});
