@@ -1,4 +1,4 @@
-# starter-microservice
+# Your First Microservice using mimik
 
 TABLE OF CONTENTS
 
