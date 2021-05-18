@@ -1,4 +1,6 @@
-# Your First Microservice using mimik
+#Quick Start
+
+## Your first microservice using mimik
 
 TABLE OF CONTENTS
 
