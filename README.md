@@ -1,4 +1,4 @@
-# Quick Start #1
+# Quick Start: Number One
 
 ## Your first microservice using mimik
 
