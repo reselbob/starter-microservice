@@ -1,6 +1,6 @@
 # Quick Start: Number One
 
-## Your first microservice using mimik
+## Creating your first microservice using mimik
 
 TABLE OF CONTENTS
 
