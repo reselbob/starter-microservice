@@ -8,7 +8,7 @@ TABLE OF CONTENTS
 * [Definition of Terms](#definition-of-terms)
 * [Important Installation Prerequisites](#important-installation-prerequisites)
 * [Build Process](#build-process)
-* [Deploying the `starter-microservice`](https://github.com/reselbob/starter-microservice#deploying-the-starter-microservice)
+* [Deploying the `starter-microservice`](#deploying-the-starter-microservice)
 
 
 ## Objective
