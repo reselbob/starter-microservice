@@ -1,5 +1,7 @@
 # Quick Start: Number One 6/7/2021
 
+![Timestamp video](https://www.ecosystemmarketplace.com/wp-content/uploads/2019/11/Swiss-Cheese.jpg)(https://youtu.be/sqw5B9B9j4M?t=2378)
+
 ## Creating your first microservice using mimik
 
 TABLE OF CONTENTS
